@@ -7,7 +7,7 @@ from two_layer_network import TwoLayerNet
 train_loss_list = []
 
 # ハイパーパラメータ
-iters_num = 10000
+iters_num = 10
 train_size = x_train.shape[0]
 batch_size = 100
 learning_rate = 0.1

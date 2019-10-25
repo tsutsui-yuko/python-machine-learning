@@ -31,8 +31,10 @@ class TwoLayerNet:
         y = self.predict(x)
         y = np.argmax(y, axis=1)
         t = np.argmax(t, axis=1)
+        print("predict :" + str(y[0]) + ",train: " + str(t[0]))
 
         accuracy = np.sum(y == t) / float(x.shape[0])
+        return accuracy
 
     def numerical_gradient(self, x, t):
         loss_w = lambda W: self.loss(x, t)
@@ -45,11 +47,11 @@ class TwoLayerNet:
 
         return grads
 
-net = TwoLayerNet(input_size=784, hidden_size=100, output_size=10)
-# print(net.params['W1'].shape)
-x = np.random.rand(100, 784)
-t = np.random.rand(100, 10)
+# net = TwoLayerNet(input_size=784, hidden_size=100, output_size=10)
+# # print(net.params['W1'].shape)
+# x = np.random.rand(100, 784)
+# t = np.random.rand(100, 10)
 
-grads = net.numerical_gradient(x, t)
+# grads = net.numerical_gradient(x, t)
 
-print(grads['W1'].shape)
+# print(grads['W1'].shape)

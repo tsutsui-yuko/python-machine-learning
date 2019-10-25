@@ -6,9 +6,9 @@ from two_layer_network import TwoLayerNet
 import matplotlib.pylab as plt
 
 # ハイパーパラメータ
-iters_num = 10000
+iters_num = 100
 train_size = x_train.shape[0]
-batch_size = 100
+batch_size = 10
 learning_rate = 0.1
 
 train_loss_list = []
@@ -35,7 +35,7 @@ for i in range(iters_num):
     loss = network.loss(x_batch, t_batch)
     train_loss_list.append(loss)
 
-    if i % iter_per_epoch == 0:
+    if i % 100 == 0:
         train_acc = network.accuracy(x_train, t_train)
         test_acc = network.accuracy(x_test, t_test)
         train_acc_list.append(train_acc)
