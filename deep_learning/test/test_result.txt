@@ -1,0 +1,49 @@
+学習1回
+predict :4,train: 5
+predict :4,train: 7
+train acc, test acc |0.09736666666666667, 0.0982
+
+学習2回
+predict :7,train: 5
+predict :7,train: 7
+train acc, test acc |0.10441666666666667, 0.1028
+
+学習3回
+predict :8,train: 5
+predict :8,train: 7
+train acc, test acc |0.09751666666666667, 0.0974
+
+学習4回
+predict :8,train: 5
+predict :8,train: 7
+train acc, test acc |0.09751666666666667, 0.0974
+
+学習5回
+predict :5,train: 5
+predict :5,train: 7
+train acc, test acc |0.1011, 0.1032
+
+学習6回
+predict :0,train: 5
+predict :0,train: 7
+train acc, test acc |0.09871666666666666, 0.098
+
+学習7回
+predict :7,train: 5
+predict :7,train: 7
+train acc, test acc |0.10441666666666667, 0.1028
+
+学習8回
+predict :1,train: 5
+predict :1,train: 7
+train acc, test acc |0.11236666666666667, 0.1135
+
+学習9回
+predict :0,train: 5
+predict :0,train: 7
+train acc, test acc |0.09871666666666666, 0.098
+
+学習10回
+predict :1,train: 5
+predict :1,train: 7
+train acc, test acc |0.11236666666666667, 0.1135
